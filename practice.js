@@ -119,6 +119,9 @@ var user2 = {
 
 //Code Here
 
+user2.name = 'Bryan G. Smith'
+user2.email = 'bryan.smith@devmounta.in'
+
 
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
@@ -132,6 +135,10 @@ var user2 = {
 
 //Code Here
 
+let methodCollection = {
+
+}
+
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object.
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console.
@@ -139,11 +146,25 @@ var user2 = {
 
 //Code Here
 
+methodCollection.alertHello = function alertHello(){
+
+   alert('hello')
+}
+
+methodCollection.logHello = function logHello(){
+ 
+ return console.log('hello')
+}
+
 /*
   Now call your alertHello and logHello methods.
 */
 
 //Code Here
+
+// ---- Already Accomplished --- //
+// alert('hello')
+// console.log('hello')
 
 ////////// PROBLEM 6 //////////
 
@@ -154,6 +175,17 @@ var user2 = {
 
 //Code Here
 
+function makePerson(name, birthday, ssn){
+  return {
+    name: name,
+    birthday: birthday,
+    ssn: ssn
+  };
+
+}
+
+makePerson()
+
 ////////// PROBLEM 7 //////////
 
 /*
@@ -162,3 +194,13 @@ var user2 = {
 */
 
 //Code Here
+
+function makeCard(cardNumber, expirationDate, securityCode){
+  return {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  };
+}
+
+makeCard()
